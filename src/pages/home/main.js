@@ -1,8 +1,11 @@
+import * as $ from 'jquery';
+import { LayoutProviderService } from '../../services/layout-provider.service';
+
 import './style.scss';
 
-// const home = require('/src/pages/home/index.html?raw');
-const home = require('/src/pages/home/index.html?raw');
+LayoutProviderService.load('home').then(() => {
+    console.log('Document Ready');
 
-const app = document.querySelector("#app");
-app.innerHTML = home;
-
+    const card = $('.card');
+    card.css({ "background-color": "blue"});
+});
