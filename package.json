@@ -8,10 +8,15 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/parser": "^7.17.3",
     "sass": "^1.49.8",
     "vite": "^2.8.0",
     "vite-plugin-html-template": "^1.1.2",
-    "vite-plugin-mpa": "^1.1.1"
+    "vite-plugin-mpa": "^1.1.1",
+    "vite-plugin-raw": "^1.0.3",
+    "vite-plugin-require": "0.0.8",
+    "vite-plugin-require-transform": "^1.0.0"
   },
   "dependencies": {
     "bootstrap": "^5.1.3"
